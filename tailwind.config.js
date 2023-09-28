@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ["Space Grotesk", ...defaultTheme.fontFamily.serif],
+        serif: ["var(--font-space-grotesk)", ...defaultTheme.fontFamily.serif],
       },
     },
   },

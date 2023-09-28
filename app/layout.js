@@ -6,7 +6,10 @@ import faviconWhite from "./metadata-favicon-white.ico";
 import favicon from "./metadata-favicon.ico";
 import Layout from "../components/Layout";
 
-const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+});
 
 export const metadata = {
   title: "web3rsvp",
