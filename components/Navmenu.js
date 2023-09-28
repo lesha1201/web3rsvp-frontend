@@ -1,3 +1,5 @@
+"use client";
+
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import joinClassNames from "../utils/joinClassNames";
@@ -28,7 +30,7 @@ export default function Navmenu({ account, disconnect }) {
                   href={`/my-rsvps/upcoming`}
                   className={joinClassNames(
                     account ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                    "block px-4 py-2 text-sm"
+                    "block px-4 py-2 text-sm",
                   )}
                 >
                   My RSVPs
@@ -41,7 +43,7 @@ export default function Navmenu({ account, disconnect }) {
                   href={`/my-events/upcoming`}
                   className={joinClassNames(
                     account ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                    "block px-4 py-2 text-sm"
+                    "block px-4 py-2 text-sm",
                   )}
                 >
                   My Events
@@ -54,7 +56,7 @@ export default function Navmenu({ account, disconnect }) {
                   onClick={disconnect}
                   className={joinClassNames(
                     account ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                    "block px-4 py-2 text-sm cursor-pointer"
+                    "block px-4 py-2 text-sm cursor-pointer",
                   )}
                 >
                   Log Out
