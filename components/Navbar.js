@@ -1,5 +1,6 @@
 import Link from "next/link";
-import Navmenu from "./Navmenu";
+
+import NavbarAccount from "./NavbarAccount";
 
 export default function Navbar() {
   return (
@@ -16,6 +17,7 @@ export default function Navbar() {
             >
               Create Event
             </Link>
+            <NavbarAccount />
           </div>
         </div>
       </nav>

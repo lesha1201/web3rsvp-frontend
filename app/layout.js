@@ -1,10 +1,12 @@
+import "@rainbow-me/rainbowkit/styles.css";
 import "./globals.css";
 
 import { Space_Grotesk } from "next/font/google";
 
+import Layout from "../components/Layout";
+import Providers from "../components/Providers";
 import faviconWhite from "./metadata-favicon-white.ico";
 import favicon from "./metadata-favicon.ico";
-import Layout from "../components/Layout";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -26,7 +28,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={spaceGrotesk.className}>
-        <Layout>{children}</Layout>
+        <Providers>
+          <Layout>{children}</Layout>
+        </Providers>
       </body>
     </html>
   );
