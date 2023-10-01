@@ -1,10 +1,10 @@
 import { useState, Fragment } from "react";
 import { Transition } from "@headlessui/react";
 import {
-  XIcon,
-  EmojiHappyIcon,
+  XMarkIcon,
+  FaceSmileIcon,
   ExclamationCircleIcon,
-} from "@heroicons/react/outline";
+} from "@heroicons/react/24/outline";
 
 export default function Alert({ alertType, alertBody, triggerAlert, color }) {
   const [showAlert, setShowAlert] = useState(triggerAlert);
@@ -27,7 +27,7 @@ export default function Alert({ alertType, alertBody, triggerAlert, color }) {
         <div className="flex">
           <div className="flex-shrink-0">
             {alertType === "success" ? (
-              <EmojiHappyIcon className="h-5 w-5" />
+              <FaceSmileIcon className="h-5 w-5" />
             ) : (
               <ExclamationCircleIcon className="h-5 w-5" />
             )}
@@ -42,7 +42,7 @@ export default function Alert({ alertType, alertBody, triggerAlert, color }) {
                 className="inline-flex rounded-md p-1.5 text-gray-900 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-gray-600"
               >
                 <span className="sr-only">Dismiss</span>
-                <XIcon
+                <XMarkIcon
                   className="h-5 w-5"
                   aria-hidden="true"
                   onClick={() => {
